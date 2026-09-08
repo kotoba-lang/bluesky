@@ -1,3 +1,12 @@
+// SVELTEKIT-BACKEND-PRESERVED: moved out of svelte/ during the cljs migration; not wired.
+//
+// Origin: appview/etzhayyim-wasm-bluesky-bsky1ngs/svelte/src/routes/xrpc/[...path]/+server.ts
+// (SvelteKit server route — an HTTP handler that proxied /xrpc/[...path] POSTs to the
+// agentgateway MCP router). It imports SvelteKit-only symbols ('@sveltejs/kit',
+// './$types') and will not compile or run as-is now that svelte/ is gone.
+// Whether/how to revive this proxy behavior (e.g. as a route inside src/app.ts, the
+// live Cloudflare Worker) is an undecided product question — left untouched here.
+
 import { json, type RequestEvent } from '@sveltejs/kit';
 import type { RequestHandler } from './$types';
 
