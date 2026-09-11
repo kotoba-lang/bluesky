@@ -45,6 +45,6 @@
             svelte source file (svelte/src/routes/+page.svelte), which no
             longer exists after this migration; the ported field must point
             at the file that replaced it, not the deleted one"
-    (is (= "appview/etzhayyim-wasm-bluesky-bsky1ngs/cljs/src/etzhayyim/wasm/bluesky/app.cljs"
+    (is (= "appview/etzhayyim-wasm-bluesky-bsky1ngs/cljs/src/etzhayyim/wasm/bluesky/app.cljk"
            (:page/relative-path app/default-db)))
     (is (not (re-find #"svelte" (:page/relative-path app/default-db))))))
