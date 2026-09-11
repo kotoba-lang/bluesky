@@ -62,7 +62,7 @@
    :page/vars []
    :page/xrpc? true
    :page/relative-path
-   "appview/etzhayyim-wasm-bluesky-bsky1ngs/cljs/src/etzhayyim/wasm/bluesky/app.cljs"})
+   "appview/etzhayyim-wasm-bluesky-bsky1ngs/cljs/src/etzhayyim/wasm/bluesky/app.cljk"})
 
 (rf/reg-event-db
  :initialize-db
